@@ -14,6 +14,6 @@
  * @since 1.0
  * @author ninjafox
  */
-get_head();
+get_header();
 do_action( 'ninja_page' );
 get_footer();
