@@ -5,6 +5,14 @@
  * @since 1.0
  * @author facebook/vietmcn.com
  */
+if ( ! defined( 'N_EXTEND_FOLDER' ) ) {
+    /**
+     * Defined Import Folder 
+     *
+     * @since 1.0
+     */
+	define( 'N_EXTEND_FOLDER', __DIR__ );
+}
 /**
  * GET the Version Template
  *
@@ -16,5 +24,4 @@ $ver         = $theme['Version'];
 //Import Src
 require_once 'src/bootstrap.php';
 require_once 'src/help-functions.php';
-//Import Front
-import_commp( 'front' );
+require_once 'src/_template.php';

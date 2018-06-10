@@ -2,15 +2,6 @@
 if ( !defined('ABSPATH') ) {
     exit;
 }
-if ( ! defined( 'N_EXTEND_FOLDER' ) ) {
-    /**
-     * Defined Import Folder 
-     *
-     * @since 1.0
-     */
-	define( 'N_EXTEND_FOLDER', __DIR__ );
-}
-
 if ( ! function_exists( 'import_commp' ) ) {
     /**
      * Crate function import_commp
@@ -19,7 +10,8 @@ if ( ! function_exists( 'import_commp' ) ) {
      */
 	function import_commp( $name = NULL ) 
 	{
-		require_once ( N_EXTEND_FOLDER .'/commp'.$name.'.php' );
+        $folder = 'commp';
+		require_once ( N_EXTEND_FOLDER .'/'.$folder.'/'.$name.'.php' );
 	}
 }
 if ( !function_exists( '__render' ) ) {

@@ -34,6 +34,6 @@
 <?php wp_head();?>
 </head>
 <body data-body="Hello World" id="ninjaspa" class="annhienspa">
-<div class="container">
-<header id="girl-header"><?php do_action( 'girl_header' );?></header>
-<main id="girl-main" class="main-set container">
+<div class="pre-loder"><div class="loding"> </div></div> <!-- end of pre-loder -->
+<header><?php do_action( 'ninja_header' );?></header>
+<main class="main-set">

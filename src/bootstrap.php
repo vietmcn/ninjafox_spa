@@ -91,8 +91,23 @@ if ( !class_exists( 'Ninja_Bootstrap' ) ) {
             //Style
             wp_enqueue_style( 'ninja-spa-style', get_template_directory_uri().'/style.css', '', $ver );
             wp_enqueue_style( 'ninja-spa-bootstrap', get_template_directory_uri().'/assets/css/bootstrap.min.css', '', '4.1.1' );
+            wp_enqueue_style( 'ninja-spa-owl-carousel', get_template_directory_uri().'/assets/css/owl-carousel.min.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-owl-themes', get_template_directory_uri().'/assets/css/owl-themes.min.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-jquery-ui', get_template_directory_uri().'/assets/css/jquery-ui.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-animate', get_template_directory_uri().'/assets/css/animate.min.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-css3-animate', get_template_directory_uri().'/assets/css/css3-animate.min.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-custom', get_template_directory_uri().'/assets/css/create.min.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-responsive', get_template_directory_uri().'/assets/css/responsive.min.css', '', $ver );
+            //font
+            wp_enqueue_style( 'ninja-spa-custom', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600', '', $ver );
+            wp_enqueue_style( 'ninja-spa-icon', get_template_directory_uri().'/assets/css/flaticon.css', '', $ver );
             //Script
             wp_enqueue_script( 'ninja-spa-bootstrap', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'), true, '4.1.1' );
+            wp_enqueue_script( 'ninja-spa-jquery-ui', get_template_directory_uri().'/assets/js/jquery-ui.js', array('jquery'), true, '4.1.1' );
+            wp_enqueue_script( 'ninja-spa-owl-carousel', get_template_directory_uri().'/assets/js/owl-carousel.min.js', array('jquery'), true, '1.3' );
+            wp_enqueue_script( 'ninja-spa-appear', get_template_directory_uri().'/assets/js/appear.js', array('jquery'), true, '4.1.1' );
+            wp_enqueue_script( 'ninja-spa-animateNumber', get_template_directory_uri().'/assets/js/animateNumber.js', array('jquery'), true, '4.1.1' );
+            wp_enqueue_script( 'ninja-spa-scripts', get_template_directory_uri().'/assets/js/scripts.js', array('jquery'), true, '4.1.1' );
         }
         public function ninja_remove_emojis()
         {

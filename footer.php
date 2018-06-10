@@ -14,3 +14,5 @@
  * @since 1.0
  * @author ninjafox
  */
+?>
+</main><?php do_action('ninja_footer');?><?php wp_footer();?></body>
