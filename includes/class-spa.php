@@ -101,6 +101,7 @@ if ( !class_exists( 'Ninja_Bootstrap' ) ) {
             //font
             wp_enqueue_style( 'ninja-spa-custom', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600', '', $ver );
             wp_enqueue_style( 'ninja-spa-icon', get_template_directory_uri().'/assets/css/flaticon.css', '', $ver );
+            wp_enqueue_style( 'ninja-spa-font-awesome', get_template_directory_uri().'/assets/css/font-awesome.css', '', $ver );
             //Script
             wp_enqueue_script( 'ninja-spa-bootstrap', get_template_directory_uri().'/assets/js/bootstrap.min.js', array('jquery'), true, '4.1.1' );
             wp_enqueue_script( 'ninja-spa-jquery-ui', get_template_directory_uri().'/assets/js/jquery-ui.js', array('jquery'), true, '4.1.1' );

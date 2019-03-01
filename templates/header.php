@@ -20,7 +20,7 @@ add_action( 'ninja_header', function() {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="logo" href="/"><img src="'.get_template_directory_uri().'/assets/img/logo.png" alt="Logo"></a>
+                    <a class="logo" href="/"><img src="'.get_template_directory_uri().'/assets/img/logo-color.png" alt="Logo"></a>
                 </div>
 
                 <div id="navbar" class="pull-right collapse navbar-collapse">

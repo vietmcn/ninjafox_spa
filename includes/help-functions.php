@@ -20,3 +20,11 @@ if ( !function_exists( '__render' ) ) {
 		echo $att;
 	}
 }
+function ninja_Class()
+{
+	if ( is_page( 'service' ) ) {
+		echo 'service';
+	} elseif ( is_page( 'about' ) ) {
+		echo 'about';
+	}
+}

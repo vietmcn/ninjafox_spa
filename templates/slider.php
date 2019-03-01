@@ -12,8 +12,8 @@ if ( !function_exists( 'ninja_slider' ) ) {
                 <div class="hero row" id="main-hero">
                 <div class="title">
                     <div>
-                        <span class="playfair">Spa &amp; wellness</span>
-                        <h2>Hide away form the world</h2>
+                        <span class="playfair">Spa &amp; Wellness</span>
+                        <h2>An Nhiên Spa</h2>
                         <p>In you won <span>"secret snactuary"</span></p>
                     </div>
                 </div> <!-- end of title -->

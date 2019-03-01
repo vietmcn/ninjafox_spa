@@ -33,7 +33,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head();?>
 </head>
-<body data-body="Hello World" id="ninjaspa" class="annhienspa">
+<body data-body="Hello World" id="<?php ninja_Class();?>" class="annhienspa">
 <div class="pre-loder"><div class="loding"> </div></div> <!-- end of pre-loder -->
 <header><?php do_action( 'ninja_header' );?></header>
 <main class="main-set">

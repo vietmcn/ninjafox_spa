@@ -14,17 +14,10 @@ function ninja_about()
                     <div class="about-slider">
                         <div>
                             <div class="col col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 section-title">
-                                <h3>We are victoria</h3>
-                                <p>Spread over two floors, our beautiful spa offer a soothing environment in which you can rest, relax and feel competely rejuvenated.</p>
+                                <h3>AN NHIÊN SPA</h3>
+                                <p>An Nhiên Spa là Trung tâm uy tín chuyên điều trị các bệnh lý về da bằng công nghệ sinh học và chăm sóc cơ thể toàn diện theo phương pháp dưỡng sinh.</p>
                             </div>
-                            <img src="http://victoria-spa.themexriver.com/victoria/images/about/slider/slider-1.jpg" alt="Slide Picture" class="img img-responsive">
-                        </div>
-                        <div>
-                            <div class="col col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2 section-title">
-                                <h3>We are victoria</h3>
-                                <p>Spread over two floors, our beautiful spa offer a soothing environment in which you can rest, relax and feel competely rejuvenated.</p>
-                            </div>
-                            <img src="http://victoria-spa.themexriver.com/victoria/images/about/slider/slider-1.jpg" alt="Slide Picture" class="img img-responsive">                
+                            <img src="https://i.imgur.com/arwC5Yx.jpg" alt="Slide Picture" class="img img-responsive">
                         </div>
                     </div>
                 </section> <!-- end of about -->
@@ -42,8 +35,8 @@ function ninja_about()
                         </div>
                     </div>
                     <div class="title">
-                        <h2>An Nhiên</h2>
-                        <p class="playfair">luxury Resort &amp; spa</p>
+                        <h2>An Nhiên Spa</h2>
+                        <p class="playfair">luxury Spa</p>
                     </div>
                 </section> <!-- end of resort -->
             </div> <!-- end of row -->
@@ -59,55 +52,50 @@ function ninja_beautifull()
             <div class="container-fluid">
                 <div class="row">
                     <div class="beautifull-spa col col-sm-6">
-                        <div class="col col-sm-6 col-sm-push-6">
-                        <h2>Beautiful spa with soothing environment</h2>
+                        <!--<div class="col col-sm-6 col-sm-push-6">
+                            <h2>Beautiful spa with soothing environment</h2>
                         </div>
-
                         <div class="col col-sm-6 col-sm-pull-6">
                             <p>Spread over two floors, our beautiful spa offer soothing environment in which you can rest, relax and feel competely rejuvenated</p>
-                        </div>
+                        </div>-->
                     </div>
 
                     <div class="faeture col col-md-6">
                         <div class="col col-xs-6" id="first-box">
                             <i class="flaticon-two"></i>
-                            <h3>Anti-aging</h3>
-                            <p>Taking time to take care of your body and mind can significantly improve your body image.</p>
+                            <h3>Chống Lão Hoá</h3>
                         </div>
                         <div class="col col-xs-6" id="second-box">
                             <i class="flaticon-three"></i>
-                            <h3>Relaxation</h3>
-                            <p>Taking time to take care of your body and mind can significantly improve your body image.</p>
+                            <h3>Thư Giãn</h3>
                         </div>
                         <div class="col col-xs-6" id="third-box">
                             <i class="flaticon-fruit"></i>
-                            <h3>Healthy skin</h3>
-                            <p>Taking time to take care of your body and mind can significantly improve your body image.</p>
+                            <h3>CHĂM SÓC TOÀN THÂN</h3>
                         </div>
                         <div class="col col-xs-6" id="fourth-box">
                             <i class="flaticon-flower"></i>
-                            <h3>Detoxification</h3>
-                            <p>Taking time to take care of your body and mind can significantly improve your body image.</p>
+                            <h3>Thải Độc</h3>
                         </div>
                     </div>
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </section> <!-- end of faeture -->
 
-        <section class="fun-fact">
+        <!--<section class="fun-fact">
             <h2 class="hidden">Fun Fact</h2>
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-6 col-sm-3">
                         <i class="flaticon-nature"></i>
-                        <span class="number" id="happy-clients">1455</span>
-                        <span class="fact-title playfair">Happy clients</span>
+                        <span class="number" id="happy-clients">2000+</span>
+                        <span class="fact-title playfair">Khách Hàng Hài Lòng</span>
                     </div>
                     <div class="col col-xs-6 col-sm-3">
                         <i class="flaticon-relax-1"></i>
-                        <span class="number" id="awards">725</span>
-                        <span class="fact-title playfair">Awwards Winning</span>
+                        <span class="number" id="awards">725+</span>
+                        <span class="fact-title playfair">Liệu Trình</span>
                     </div>
                     <div class="col col-xs-6 col-sm-3">
                         <i class="flaticon-food-1"></i>
@@ -119,9 +107,9 @@ function ninja_beautifull()
                         <span class="number" id="works">128</span>
                         <span class="fact-title playfair">Works Complete</span>
                     </div>
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </section> <!-- end of funfact -->
+                </div>
+            </div>
+        </section> -->
 
     ' );
 }

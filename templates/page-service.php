@@ -2,21 +2,68 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-add_action( 'ninja_front', 'ninja_service' );
-function ninja_service()
-{
-    __render( '
-        <section class="services">
-            <h2 hidden class="hidden">Service</h2>
+add_action( 'ninja_page', function() {
+
+    if ( is_page( 'service' ) ) {
+        __render( '
+            <div class="banar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-sm-6"></div>
+                        <div class="col col-sm-6">
+                            <span class="playfair">Spa &amp; Wellness</span>
+                            <h2>An Nhiên Spa Service</h2>
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of banar -->    
+            <div class="page-breadcrumb simple-page-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <ol class="playfair breadcrumb">
+                                <li><a href="#">Home</a></li>
+                                <li class="active">Services</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of page-breadcrumb -->
+            <section class="about-victoria">
+                <div class="container">
+                    <div class="row section-title">
+                        <div class="col col-md-8 col-md-offset-2">
+                            <h2>An Nhiên <span>spa</span></h2>
+                            <p>Đến với An Nhiên Spa, Quý khách hàng sẽ cảm nhận sự hồi phục của làn da thông qua các quy trình điều trị chuyên sâu cùng với những bài massage độc đáo. Đánh thức mọi giác quan bằng các liệu pháp được thực hiện bởi những chuyên viên massage chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                    <img id="facial-style" src="'.get_template_directory_uri().'/assets/img/promo.jpg" alt class="img img-responsive">
+                </div> <!-- end of container -->
+            </section> <!-- end of about-victoria -->
+            <section class="middle-banar">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-md-8 col-md-offset-2">
+                            <h2>An Nhiên Spa</h2>
+                            <p>Bên cạnh việc cung cấp dưỡng chất cần thiết cho làn da, những liệu pháp chăm sóc da này còn mang đến cho bạn những phút giây thư giãn tuyệt vời, chìm lắng trong tiếng nhạc du dương, quên đi mệt mỏi của một ngày làm việc bận rộn.</p>
+                            <a hidden href="#" class="btn btn-default">Purchase now</a>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- end of middle-banar -->
+        
+            <section class="services">
+            <h2 hidden class="hidden">Dịch Vụ</h2>
             <div class="container">
                 <div class="top-button row">
                     <div class="col pull-left">
-                        <p>An Nhiên Spa service</p>
+                        <p>Dịch Vụ An Nhiên Spa</p>
                     </div>
                     <div class="col col-sm-9"></div>
-                    <div class="col pull-right">
+                    <!--<div class="col pull-right">
                         <button class="btn btn-default">
-                            <i class="flaticon-app"></i>
+                            <i class="flaticon-app"></i>    
                         </button>
                         <button class="btn btn-default">
                             <i class="flaticon-squares-1"></i>
@@ -24,7 +71,7 @@ function ninja_service()
                         <button class="active btn btn-default">
                             <i class="flaticon-three-1"></i>
                         </button>
-                    </div>
+                    </div>-->
                 </div> <!-- end of service-button -->
 
                 <section class="facial row">
@@ -44,9 +91,9 @@ function ninja_service()
                         <div class="facial-right-thumbnail thumbnail">
                             <div class="victorial-facila-massage row">
                                 <h4>An Nhiên Spa facial <span>massage</span></h4>
-                                <p>Service Hours: 08.00am-20.00pm, Service price from $50</p>
+                                <p hidden>Service Hours: 08.00am-20.00pm, Service price from $50</p>
                                 <a href="#" class="btn btn-default">View An Nhiên Spa photo gallery</a>
-                                <div class="like-comment">
+                                <div hidden style="display:none;" class="like-comment">
                                     <a href="#"><i class="flaticon-shapes">125 Likes</i></a>
                                     <a href="#"><i class="flaticon-interface-2">125 Comments</i></a>
                                 </div>
@@ -96,9 +143,9 @@ function ninja_service()
                         <div class="body-left-thumbnail thumbnail">
                             <div class="victorial-body-massage row">
                                 <h4>An Nhiên Spa Body <span>massage</span></h4>
-                                <p>Service Hours: 08.00am-20.00pm, Service price from $50</p>
+                                <p hidden>Service Hours: 08.00am-20.00pm, Service price from $50</p>
                                 <a href="#" class="btn btn-default">View An Nhiên Spa photo gallery</a>
-                                <div class="like-comment">
+                                <div hidden class="like-comment">
                                     <a href="#"><i class="flaticon-shapes">125 Likes</i></a>
                                     <a href="#"><i class="flaticon-interface-2">125 Comments</i></a>
                                 </div>
@@ -159,9 +206,9 @@ function ninja_service()
                         <div class="foot-right-thumbnail thumbnail">
                             <div class="victorial-foot-massage row">
                                 <h4>An Nhiên Spa Foot <span>massage</span></h4>
-                                <p>Service Hours: 08.00am-20.00pm, Service price from $50</p>
+                                <p hidden>Service Hours: 08.00am-20.00pm, Service price from $50</p>
                                 <a href="#" class="btn btn-default">View An Nhiên Spa photo gallery</a>
-                                <div class="like-comment">
+                                <div hidden class="like-comment">
                                     <a href="#"><i class="flaticon-shapes">125 Likes</i></a>
                                     <a href="#"><i class="flaticon-interface-2">125 Comments</i></a>
                                 </div>
@@ -194,8 +241,11 @@ function ninja_service()
                     </div> <!-- end of right -->
                 </section> <!-- end of foot -->
 
-                <a href="service.html" class="view-all-service btn btn-default">View all service</a>
+                <a href="https://annhienspa.salonhero.vn/dat-lich" target="_blank" class="view-all-service btn btn-default">Book Now</a>
             </div> <!-- end of container -->
         </section> <!-- end of service -->
-    ' );
-}
+    
+        ' );
+    }
+
+} );

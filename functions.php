@@ -5,13 +5,13 @@
  * @since 1.0
  * @author facebook/vietmcn.com
  */
-if ( ! defined( 'N_EXTEND_FOLDER' ) ) {
+if ( ! defined( 'SPA_FOLDER' ) ) {
     /**
      * Defined Import Folder 
      *
      * @since 1.0
      */
-	define( 'N_EXTEND_FOLDER', __DIR__ );
+	define( 'SPA_FOLDER', __DIR__ );
 }
 /**
  * GET the Version Template
